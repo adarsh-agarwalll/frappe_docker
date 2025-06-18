@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: erpnext
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: "bench start"
+    envVars:
+      - key: SITE_NAME
+        value: erp.mysite.com
